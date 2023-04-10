@@ -1,0 +1,221 @@
+html {
+    /** design custom cursor using image **/
+    cursor: url('image/cursor2.png'), default;
+    height: 100%;
+}
+
+body {
+    font-family: Comic Sans MS, Lucida Handwriting, Helvetica;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.header {
+    padding: 180px;
+    text-align: center;
+    background-image: url('image/topbg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align: justify;
+
+}
+
+.fonttitle {
+    font-family: 'Fasthand', cursive;
+    align: "justify";
+    font-size: 70px;
+    color: aliceblue;
+
+}
+
+.fontbio {
+    font-family: 'Cookie', cursive;
+    font-size: 25px;
+    align: "justify";
+}
+
+.font1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 15px;
+}
+
+.font2 {
+    font-family: 'Marck Script', cursive;
+    font-size: 16px;
+}
+
+.font3 {
+    font-family: 'Tillana', cursive;
+}
+
+nav {
+    overflow: hidden;
+    height: 50px;
+    background-image: url(https://img.freepik.com/premium-vector/holographic-fantasy-rainbow-unicorn-background-with-clouds-pastel-color-sky-magical-landscape-abstract-fabulous-pattern-cute-candy-wallpaper-vector_501173-404.jpg);
+    text-align: center;
+    font-family: arial;
+    background-size: cover;
+
+
+}
+
+nav a {
+    padding: 15px 16px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #cda8b8;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: warp;
+}
+
+.side1 {
+    flex: 10%;
+    background-image: url(https://i.pinimg.com/236x/63/d5/fe/63d5febbbdc79e4acdbf5702b7a95ddb.jpg);
+    padding: 20px;
+}
+
+.side2 {
+    flex: 10%;
+    background-image: url(https://i.pinimg.com/236x/63/d5/fe/63d5febbbdc79e4acdbf5702b7a95ddb.jpg);
+    padding: 20px;
+}
+
+main {
+    flex: 80%;
+    background-color: #F7CAC9;
+    padding: 20px;
+}
+
+article {
+    float: left;
+    width: 53%;
+}
+
+aside {
+    float: right;
+    width: 45%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+/**media or phone mode**/
+@media screen and (max-width:800px) {
+
+    header {
+        padding: 15px;
+        margin: 15px 0px;
+
+    }
+
+    .fonttitle {
+        font-size: 60px;
+    }
+
+    article,
+    aside {
+        width: 100%;
+        float: none;
+    }
+
+    .card {
+        padding: 15px;
+        margin: 15px 0px;
+    }
+
+    img {
+        max-width: 90%;
+        height: 90%;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+footer {
+    background-image: url(https://img.freepik.com/premium-vector/holographic-fantasy-rainbow-unicorn-background-with-clouds-pastel-color-sky-magical-landscape-abstract-fabulous-pattern-cute-candy-wallpaper-vector_501173-404.jpg);
+    text-align: center;
+    font-family: arial;
+    background-size: cover;
+    color: black;
+    font-family: 'Fasthand', cursive;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/**hover image **/
+.wrapper {
+    width: 100px;
+    margin: auto;
+}
+
+.wrapper a {
+    border: 5px solid transparent;
+    width: 100px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.wrapper img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.wrapper a:before {
+    transition: all .6s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333333;
+    transform: scale(0);
+    border-radius: 5px;
+}
+
+.wrapper a:hover:before {
+    opacity: .2;
+    transform: scale(1);
+}
+
+.wrapper a:after {
+    transition: all .7s ease .2s;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #252525;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.wrapper a:hover:after {
+    opacity: .35;
+    transform: scale(1);
+    border-radius: 5px;
+}
